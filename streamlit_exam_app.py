@@ -19,6 +19,124 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Custom CSS for better UI
+st.markdown("""
+<style>
+    /* Main app styling */
+    .main .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    /* Header styling */
+    .main-header {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        padding: 2rem;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Question card styling */
+    .question-card {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border: 1px solid #e9ecef;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Button styling */
+    .stButton > button {
+        border-radius: 8px;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Sidebar styling */
+    .sidebar .sidebar-content {
+        background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    /* Progress bar styling */
+    .stProgress > div > div > div > div {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    /* Success/Error message styling */
+    .success-message {
+        background: #d4edda;
+        color: #155724;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #c3e6cb;
+        margin: 1rem 0;
+    }
+    
+    .error-message {
+        background: #f8d7da;
+        color: #721c24;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #f5c6cb;
+        margin: 1rem 0;
+    }
+    
+    /* Timer styling */
+    .timer-display {
+        background: #fff3cd;
+        color: #856404;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+    }
+    
+    /* Metric card styling */
+    .metric-card {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #dee2e6;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Hide Streamlit default elements */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display:none;}
+    
+    /* Question navigation grid */
+    .question-nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+    
+    /* Image container styling */
+    .image-container {
+        border: 2px solid #dee2e6;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # AWS S3 Configuration - Load from environment variables
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
@@ -245,7 +363,31 @@ def show_timer():
     """Display a timer showing elapsed time"""
     if st.session_state.timer_start:
         elapsed = time.time() - st.session_state.timer_start
-        st.sidebar.markdown(f"### ⏱️ Time Elapsed: {format_time(elapsed)}")
+        time_limit_seconds = st.session_state.user_info.get('time_limit', 30) * 60
+        remaining = max(0, time_limit_seconds - elapsed)
+        
+        if remaining > 0:
+            st.sidebar.markdown(f"""
+            <div class="timer-display">
+                ⏰ Time Remaining<br>
+                <span style="font-size: 1.5em;">{format_time(remaining)}</span>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # Show progress bar for time
+            time_progress = min(1.0, elapsed / time_limit_seconds)
+            st.sidebar.progress(time_progress)
+            
+            # Warning when time is running low
+            if remaining < 300:  # Less than 5 minutes
+                st.sidebar.error("⚠️ Only 5 minutes left!")
+            elif remaining < 600:  # Less than 10 minutes
+                st.sidebar.warning("⏰ 10 minutes remaining")
+        else:
+            st.sidebar.error("⏰ Time's up!")
+            if not st.session_state.exam_completed:
+                submit_exam()
+                st.rerun()
 
 def show_progress():
     """Display progress through the exam"""
@@ -296,40 +438,53 @@ def restart_exam():
 # Page Components
 def show_welcome_page():
     """Display the welcome page with exam setup options"""
-    st.title("📚 Physics Examination System")
-    st.markdown("### Welcome to the online examination system!")
+    # Header with gradient background
+    st.markdown("""
+    <div class="main-header">
+        <h1>📚 Physics Examination System</h1>
+        <p style="font-size: 1.2em; margin: 0; opacity: 0.9;">Welcome to the online examination system!</p>
+        <p style="margin: 0.5rem 0 0 0; opacity: 0.8;">Test your physics knowledge with interactive questions</p>
+    </div>
+    """, unsafe_allow_html=True)
     
     with st.form("user_info_form"):
+        st.markdown("#### 👤 Personal Information")
         col1, col2 = st.columns(2)
         with col1:
-            name = st.text_input("Full Name", key="name")
-            email = st.text_input("Email", key="email")
+            name = st.text_input("👤 Full Name", key="name", placeholder="Enter your full name")
+            email = st.text_input("📧 Email", key="email", placeholder="your.email@example.com")
         with col2:
-            institution = st.text_input("Institution/School", key="institution")
-            student_id = st.text_input("Student ID (optional)", key="student_id")
+            institution = st.text_input("🏫 Institution/School", key="institution", placeholder="Your school or university")
+            student_id = st.text_input("🆔 Student ID (optional)", key="student_id", placeholder="Your student ID")
         
-        st.markdown("### Exam Configuration")
+        st.markdown("#### ⚙️ Exam Configuration")
         col1, col2 = st.columns(2)
         with col1:
-            num_questions = st.slider("Number of Questions", min_value=5, max_value=30, value=10, step=5)
+            num_questions = st.slider("📊 Number of Questions", min_value=5, max_value=30, value=10, step=5)
+            st.info(f"You will answer {num_questions} questions")
         with col2:
-            time_limit = st.slider("Time Limit (minutes)", min_value=10, max_value=120, value=30, step=5)
+            time_limit = st.slider("⏰ Time Limit (minutes)", min_value=10, max_value=120, value=30, step=5)
+            st.info(f"Exam duration: {time_limit} minutes")
         
-        st.markdown("### Difficulty Distribution")
+        st.markdown("#### 🎯 Difficulty Distribution")
+        st.markdown("*Adjust the percentage of questions for each difficulty level*")
         col1, col2, col3 = st.columns(3)
         with col1:
-            easy_percent = st.slider("Easy (%)", min_value=0, max_value=100, value=50, step=10)
+            easy_percent = st.slider("🟢 Easy (%)", min_value=0, max_value=100, value=50, step=10)
         with col2:
-            medium_percent = st.slider("Medium (%)", min_value=0, max_value=100, value=30, step=10)
+            medium_percent = st.slider("🟠 Medium (%)", min_value=0, max_value=100, value=30, step=10)
         with col3:
-            hard_percent = st.slider("Hard (%)", min_value=0, max_value=100, value=20, step=10)
+            hard_percent = st.slider("🔴 Hard (%)", min_value=0, max_value=100, value=20, step=10)
         
         # Validate percentages add up to 100%
         total_percent = easy_percent + medium_percent + hard_percent
         if total_percent != 100:
-            st.warning(f"Difficulty percentages must add up to 100%. Current total: {total_percent}%")
+            st.warning(f"⚠️ Difficulty percentages must add up to 100%. Current total: {total_percent}%")
+        else:
+            st.success("✅ Configuration is valid!")
         
-        submitted = st.form_submit_button("Start Exam")
+        st.markdown("---")
+        submitted = st.form_submit_button("🚀 Start Exam", type="primary", use_container_width=True)
         
         if submitted and total_percent == 100:
             st.session_state.user_info = {
@@ -396,32 +551,60 @@ def show_exam_page():
     """Display the main exam page with questions"""
     # Get current question
     if not st.session_state.questions:
-        st.error("No questions available. Please restart the exam.")
+        st.error("❌ No questions available. Please restart the exam.")
         return
     
     question = st.session_state.questions[st.session_state.current_question_index]
     
-    # Display question
-    st.markdown(f"## Question {st.session_state.current_question_index + 1}")
-    st.markdown(f"### {question['question_text']}")
+    # Question header with styling
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown(f"""
+        <div style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
+                    color: white; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
+            <h2 style="margin: 0;">📝 Question {st.session_state.current_question_index + 1} of {len(st.session_state.questions)}</h2>
+        </div>
+        """, unsafe_allow_html=True)
+    with col2:
+        # Show difficulty badge
+        difficulty = question.get('difficulty_level', 'Unknown')
+        if difficulty == "Easy":
+            st.markdown('<span style="background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: bold;">🟢 Easy</span>', unsafe_allow_html=True)
+        elif difficulty == "Medium":
+            st.markdown('<span style="background: #ffc107; color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: bold;">🟠 Medium</span>', unsafe_allow_html=True)
+        elif difficulty == "Hard":
+            st.markdown('<span style="background: #dc3545; color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: bold;">🔴 Hard</span>', unsafe_allow_html=True)
     
-    # Display image if available
+    # Question text in a card
+    st.markdown(f"""
+    <div class="question-card">
+        <h3 style="color: #495057; margin-bottom: 1rem;">❓ {question['question_text']}</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Display image if available with better styling
     if 'image_path' in question and question['image_path']:
         try:
-            st.image(question['image_path'], caption=question.get('image_filename', ''), use_container_width=True)
+            st.markdown('<div class="image-container">', unsafe_allow_html=True)
+            st.image(question['image_path'], 
+                    caption=f"📸 {question.get('image_filename', 'Question Image')}", 
+                    use_container_width=True)
+            st.markdown('</div>', unsafe_allow_html=True)
         except Exception as e:
-            st.error(f"Error displaying image: {e}")
+            st.error(f"❌ Error displaying image: {e}")
     
-    # Display options
+    # Display options with better styling
     option_labels = ["A", "B", "C", "D"]
     options = question.get('option_text', [])
     
     # Get previously selected answer if any
     current_answer = st.session_state.answers.get(st.session_state.current_question_index, None)
     
-    # Display radio buttons for options
+    st.markdown("#### 📋 Choose your answer:")
+    
+    # Display radio buttons for options with custom styling
     selected_option = st.radio(
-        "Select your answer:",
+        "",
         options=range(len(options)),
         format_func=lambda i: f"{option_labels[i]}. {options[i]}",
         index=current_answer if current_answer is not None else 0,
@@ -431,34 +614,50 @@ def show_exam_page():
     # Save the selected answer
     st.session_state.answers[st.session_state.current_question_index] = selected_option
     
-    # Navigation buttons
-    col1, col2, col3 = st.columns([1, 1, 1])
+    st.markdown("---")
+    
+    # Navigation buttons with better styling
+    col1, col2, col3, col4 = st.columns([1, 1, 2, 1])
     
     with col1:
-        if st.button("← Previous", disabled=st.session_state.current_question_index == 0):
+        if st.button("⬅️ Previous", 
+                    disabled=st.session_state.current_question_index == 0,
+                    use_container_width=True):
             prev_question()
             st.rerun()
     
     with col2:
-        if st.button("Submit Exam", type="primary"):
+        if st.button("➡️ Next", 
+                    disabled=st.session_state.current_question_index == len(st.session_state.questions) - 1,
+                    use_container_width=True):
+            next_question()
+            st.rerun()
+    
+    with col3:
+        # Show progress
+        answered = len(st.session_state.answers)
+        total = len(st.session_state.questions)
+        progress_text = f"Progress: {answered}/{total} answered"
+        
+        if answered == total:
+            st.success(f"✅ {progress_text} - Ready to submit!")
+        elif answered >= total * 0.7:
+            st.info(f"📊 {progress_text}")
+        else:
+            st.warning(f"⚠️ {progress_text}")
+    
+    with col4:
+        if st.button("🎯 Submit Exam", type="primary", use_container_width=True):
             if len(st.session_state.answers) < len(st.session_state.questions):
                 unanswered = len(st.session_state.questions) - len(st.session_state.answers)
-                if not st.checkbox("I confirm I want to submit with unanswered questions", key="confirm_submit"):
-                    st.warning(f"You have {unanswered} unanswered questions. Please check the navigator.")
+                if not st.checkbox("✅ I confirm I want to submit with unanswered questions", key="confirm_submit"):
+                    st.warning(f"⚠️ You have {unanswered} unanswered questions. Please check the navigator.")
                 else:
                     submit_exam()
                     st.rerun()
             else:
                 submit_exam()
                 st.rerun()
-    
-    with col3:
-        if st.button("Next →", disabled=st.session_state.current_question_index == len(st.session_state.questions) - 1):
-            next_question()
-            st.rerun()
-    
-    # Show difficulty in sidebar
-    display_difficulty_badge(question.get('difficulty_level', 'Unknown'))
 
 def calculate_results():
     """Calculate exam results"""
@@ -509,24 +708,75 @@ def calculate_results():
 
 def show_results_page():
     """Display the results page"""
-    st.title("📊 Exam Results")
+    # Header with gradient background
+    st.markdown("""
+    <div class="main-header">
+        <h1>🎉 Exam Completed!</h1>
+        <p style="font-size: 1.2em; margin: 0; opacity: 0.9;">Congratulations on completing your Physics examination</p>
+    </div>
+    """, unsafe_allow_html=True)
     
     # Calculate results
     results = calculate_results()
     
-    # Display summary
-    st.markdown(f"### Summary for {st.session_state.user_info.get('name', 'Student')}")
-    st.markdown(f"**Exam ID:** {st.session_state.exam_id}")
-    st.markdown(f"**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    # Display summary card
+    student_name = st.session_state.user_info.get('name', 'Student')
+    st.markdown(f"""
+    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; border: 1px solid #e9ecef;">
+        <h3 style="margin: 0 0 0.5rem 0; color: #495057;">📋 Exam Summary for {student_name}</h3>
+        <p style="margin: 0; color: #6c757d;"><strong>Exam ID:</strong> {st.session_state.exam_id}</p>
+        <p style="margin: 0; color: #6c757d;"><strong>Date:</strong> {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+        <p style="margin: 0; color: #6c757d;"><strong>Institution:</strong> {st.session_state.user_info.get('institution', 'N/A')}</p>
+    </div>
+    """, unsafe_allow_html=True)
     
-    # Score overview
-    col1, col2, col3 = st.columns(3)
+    # Score overview with enhanced metrics
+    st.markdown("### 📊 Performance Overview")
+    col1, col2, col3, col4 = st.columns(4)
+    
+    # Determine performance color
+    percentage = results['percentage']
+    if percentage >= 80:
+        score_color = "#28a745"  # Green
+        performance = "Excellent! 🌟"
+    elif percentage >= 60:
+        score_color = "#ffc107"  # Yellow
+        performance = "Good! 👍"
+    else:
+        score_color = "#dc3545"  # Red
+        performance = "Needs Improvement 📚"
+    
     with col1:
-        st.metric("Score", f"{results['score']}/{results['total']}")
+        st.markdown(f"""
+        <div class="metric-card">
+            <h2 style="color: {score_color}; margin: 0;">{results['score']}/{results['total']}</h2>
+            <p style="margin: 0.5rem 0 0 0;">Final Score</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
     with col2:
-        st.metric("Percentage", f"{results['percentage']:.1f}%")
+        st.markdown(f"""
+        <div class="metric-card">
+            <h2 style="color: {score_color}; margin: 0;">{results['percentage']:.1f}%</h2>
+            <p style="margin: 0.5rem 0 0 0;">Percentage</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
     with col3:
-        st.metric("Time Taken", format_time(results['time_taken']))
+        st.markdown(f"""
+        <div class="metric-card">
+            <h2 style="color: #6c757d; margin: 0;">{format_time(results['time_taken'])}</h2>
+            <p style="margin: 0.5rem 0 0 0;">Time Taken</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col4:
+        st.markdown(f"""
+        <div class="metric-card">
+            <h2 style="color: {score_color}; margin: 0; font-size: 1.2em;">{performance}</h2>
+            <p style="margin: 0.5rem 0 0 0;">Overall</p>
+        </div>
+        """, unsafe_allow_html=True)
     
     # Question breakdown
     st.markdown("### Question Breakdown")
