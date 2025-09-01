@@ -408,7 +408,7 @@ def show_exam_page():
     # Display image if available
     if 'image_path' in question and question['image_path']:
         try:
-            st.image(question['image_path'], caption=question.get('image_filename', ''), use_column_width=True)
+            st.image(question['image_path'], caption=question.get('image_filename', ''), use_container_width=True)
         except Exception as e:
             st.error(f"Error displaying image: {e}")
     
