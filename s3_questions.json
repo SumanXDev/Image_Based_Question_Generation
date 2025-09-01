@@ -1,0 +1,162 @@
+[
+  {
+    "question_text": "The image displays a wave generated on a string by an oscillating hand. Based on the direction of particle motion relative to the wave's propagation, what type of wave is illustrated?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_125_image_1.jpg",
+    "option_text": [
+      "Transverse wave",
+      "Longitudinal wave",
+      "Sound wave",
+      "Electromagnetic wave"
+    ],
+    "correct_answer_index": 0,
+    "difficulty_level": "Easy",
+    "explanation": "The image shows that the particles of the string (for example, at point P, indicated by the vertical red arrows) oscillate perpendicular to the direction of the wave's propagation (indicated by the horizontal red arrow labeled 'v'). This fundamental characteristic, where the oscillation of the medium's particles is perpendicular to the direction of energy transfer, defines a transverse wave.",
+    "topic": "Waves",
+    "subtopic": "Types of Waves",
+    "image_filename": "page_125_image_1.jpg"
+  },
+  {
+    "question_text": "A string vibrator excites a string of length L, held under tension by a mass *m*, resulting in a standing wave pattern as depicted, where L is precisely `3λ₃/2`. If the vibrator's frequency remains constant, what change in the hanging mass is required to transition the string to resonate in the 5th harmonic?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_147_image_4.jpg",
+    "option_text": [
+      "The mass must be increased to `(25/9)m`.",
+      "The mass must be decreased to `(9/25)m`.",
+      "The mass must be increased to `(5/3)m`.",
+      "The mass must be decreased to `(3/5)m`."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "The image shows a string of length L resonating in the 3rd harmonic, indicated by `L = 3λ₃/2`. This follows the general condition for standing waves on a string fixed at both ends (or a configuration that effectively behaves as such for wavelength calculation), which is `L = nλ/2`, where `n` is the harmonic number. Thus, for the initial state, `n = 3`, and `λ₃ = 2L/3`.\n\nThe wave speed (v) on a string is given by `v = fλ`, where `f` is the frequency and `λ` is the wavelength. The wave speed is also determined by the tension (T) and the linear mass density (μ) of the string: `v = √(T/μ)`. The tension T is provided by the hanging mass `m`, so `T = mg`.\n\nCombining these relationships:\n`fλ = √(mg/μ)`\nSubstituting `λ = 2L/n`:\n`f(2L/n) = √(mg/μ)`\n\nTo find the relationship between mass and harmonic number, we can square both sides and rearrange for `m`:\n`f²(4L²/n²) = mg/μ`\n`m = (f² * 4L² * μ) / (g * n²)`\n\nSince the vibrator's frequency (`f`), string length (`L`), linear mass density (`μ`), and acceleration due to gravity (`g`) are all constant, the mass `m` is inversely proportional to the square of the harmonic number (`n²`):\n`m ∝ 1/n²`\n\nFor the initial state (3rd harmonic, `n₃ = 3`), the mass is `m₃`.\nFor the desired state (5th harmonic, `n₅ = 5`), the mass is `m₅`.\n\nTherefore, we can write the ratio:\n`m₅ / m₃ = (1/n₅²) / (1/n₃²) = n₃² / n₅²`\n`m₅ / m₃ = 3² / 5² = 9 / 25`\n`m₅ = (9/25)m₃`\n\nThus, the mass must be decreased to (9/25) of its original value to achieve resonance in the 5th harmonic at the same frequency.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Standing Waves on a String, Harmonics, Wave Speed and Tension",
+    "image_filename": "page_147_image_4.jpg"
+  },
+  {
+    "question_text": "In the context of engineering design and analysis, what does 'Δa' specifically represent for dimension 'a' as shown in the image?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_35_image_1.jpg",
+    "option_text": [
+      "The initial length of the dimension 'a'.",
+      "A small variation or change in the dimension 'a'.",
+      "The area calculated using dimension 'a'.",
+      "The square of the dimension 'a'."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The Greek letter delta (Δ) is a standard notation in engineering and science to represent a change, difference, or increment in a variable. Therefore, Δa specifically denotes a small variation or increment applied to the original dimension 'a'. This understanding is foundational for concepts like tolerances, error analysis, and differential calculations in engineering, where slight deviations from nominal dimensions are critical to consider.",
+    "topic": "Engineering Fundamentals",
+    "subtopic": "Notation and Dimensional Changes",
+    "image_filename": "page_35_image_1.jpg"
+  },
+  {
+    "question_text": "Based on the provided P-V diagrams, which of the following phenomena is explicitly illustrated for a non-ideal gas (graph b) but is not accounted for by the ideal gas model (graph a)?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_105_image_0.jpg",
+    "option_text": [
+      "The change in volume with respect to pressure at a constant temperature.",
+      "The increase in pressure with increasing temperature at a constant volume.",
+      "The coexistence of liquid and vapor phases.",
+      "The direct relationship between temperature and the average kinetic energy of molecules."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "Graph (a) shows ideal gas behavior, where pressure and volume are inversely related at constant temperature, and the gas is assumed to never condense. Graph (b) for a non-ideal gas, however, clearly shows a distinct 'Liquid-vapor' region at lower temperatures (e.g., T1, T2), indicating the conditions under which the substance can exist as both a liquid and a vapor in equilibrium. This phase transition from gas to liquid (condensation) or liquid to gas (vaporization) is a key characteristic of real substances and is crucial for practical applications like refrigeration, liquefaction of gases, and steam power generation, but it is not described by the ideal gas model. Options 0, 1, and 3 describe general gas properties that can be inferred or are common to both models, though the ideal gas model is a simplification.",
+    "topic": "Thermodynamics",
+    "subtopic": "Real Gases and Phase Transitions",
+    "image_filename": "page_105_image_0.jpg"
+  },
+  {
+    "question_text": "A hydraulic lift, as illustrated, is designed to raise vehicles. The input piston (left) has an area (A1) of 50 cm², and the output piston (right), supporting a car with a mass of 1500 kg, has an area (A2) of 1000 cm². The hydraulic fluid has a density (ρ) of 800 kg/m³. If the system is in equilibrium with the car just lifted, and the fluid level in the input cylinder is 0.5 meters (h) higher than the fluid level in the output cylinder, calculate the minimum force F1 required to achieve this state. (Assume g = 9.81 m/s²).",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_14_image_0.jpg",
+    "option_text": [
+      "716.1 N",
+      "735.8 N",
+      "755.4 N",
+      "932.0 N"
+    ],
+    "correct_answer_index": 0,
+    "difficulty_level": "Hard",
+    "explanation": "To solve this problem, we must apply Pascal's Principle considering the hydrostatic pressure difference due to the height 'h'. The pressure at the same horizontal level in a continuous fluid at rest must be equal.\n\nLet's choose the horizontal dashed line (fluid level in the output cylinder) as our reference level.\n\n1.  **Calculate the force F2 exerted by the car:**\n    F2 = mass × g = 1500 kg × 9.81 m/s² = 14715 N.\n\n2.  **Convert areas to square meters:**\n    A1 = 50 cm² = 50 × (10⁻² m)² = 50 × 10⁻⁴ m² = 0.005 m²\n    A2 = 1000 cm² = 1000 × (10⁻² m)² = 1000 × 10⁻⁴ m² = 0.1 m²\n\n3.  **Apply Pascal's Principle:**\n    The pressure at the reference level from the right side is P_right = F2/A2.\n    P_right = 14715 N / 0.1 m² = 147150 Pa.\n\n    The pressure at the reference level from the left side is due to the force F1 and the column of fluid of height 'h'. Since the fluid level in the input cylinder is higher, the hydrostatic pressure (ρgh) adds to the pressure exerted by F1 at the dashed line.\n    P_left = (F1/A1) + ρgh\n\n    For equilibrium, P_left = P_right:\n    (F1/A1) + ρgh = F2/A2\n\n4.  **Substitute known values and solve for F1:**\n    ρgh = 800 kg/m³ × 9.81 m/s² × 0.5 m = 3924 Pa\n\n    F1 / 0.005 m² + 3924 Pa = 147150 Pa\n\n    F1 / 0.005 = 147150 - 3924\n    F1 / 0.005 = 143226 Pa\n\n    F1 = 143226 Pa × 0.005 m²\n    F1 = 716.13 N\n\nRounding to one decimal place, F1 = 716.1 N.\n\n**Distractor Analysis:**\n*   **735.8 N (Option B):** This result is obtained if the hydrostatic pressure term (ρgh) is ignored, i.e., F1/A1 = F2/A2, which yields F1 = (14715 N) × (0.005 m² / 0.1 m²) = 735.75 N.\n*   **755.4 N (Option C):** This result is obtained if the hydrostatic pressure term is incorrectly added to the right side's pressure, i.e., F1/A1 = F2/A2 + ρgh, which yields F1 = (147150 + 3924) × 0.005 = 755.37 N.\n*   **932.0 N (Option D):** This result is obtained if the hydrostatic pressure term (ρgh) is incorrectly added directly to the force F2 before dividing by A2, i.e., F1/A1 = (F2 + ρgh)/A2, which yields F1 = (14715 + 3924) / 0.1 × 0.005 = 931.95 N.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Pascal's Principle and Hydraulic Systems",
+    "image_filename": "page_14_image_0.jpg"
+  },
+  {
+    "question_text": "A bubble rises from the bottom of a liquid, where the pressure is 3 atm and the temperature is 7 °C, to the surface where the pressure is 1 atm and the temperature is 27 °C. Assuming the bubble contains an ideal gas and its quantity of gas remains constant, what is the ratio of the bubble's volume at the surface to its volume at the bottom (V_surface / V_bottom)?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_39_image_0.jpg",
+    "option_text": [
+      "3.21",
+      "2.80",
+      "0.33",
+      "11.57"
+    ],
+    "correct_answer_index": 0,
+    "difficulty_level": "Easy",
+    "explanation": "To solve this problem, we use the combined gas law, which states that (P1 * V1) / T1 = (P2 * V2) / T2, where P is pressure, V is volume, and T is absolute temperature. It's crucial to convert temperatures from Celsius to Kelvin by adding 273.\n\nGiven:\nAt the bottom (1):\nPressure P1 = 3 atm\nTemperature T1 = 7 °C + 273 = 280 K\n\nAt the surface (2):\nPressure P2 = 1 atm\nTemperature T2 = 27 °C + 273 = 300 K\n\nWe need to find the ratio V2 / V1.\nFrom the combined gas law: V2 / V1 = (P1 / P2) * (T2 / T1)\n\nSubstitute the values:\nV2 / V1 = (3 atm / 1 atm) * (300 K / 280 K)\nV2 / V1 = 3 * (30 / 28)\nV2 / V1 = 3 * (15 / 14)\nV2 / V1 = 45 / 14\nV2 / V1 ≈ 3.214\n\nTherefore, the ratio of the bubble's volume at the surface to its volume at the bottom is approximately 3.21.",
+    "topic": "Thermodynamics",
+    "subtopic": "Ideal Gas Law",
+    "image_filename": "page_39_image_0.jpg"
+  },
+  {
+    "question_text": "From a theoretical perspective, analyzing the transition of the spring-mass system from its equilibrium state (a) to the compressed state (b) by a displacement x1, which statement accurately describes the changes in mechanical properties and forces within the system, assuming an ideal spring?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_122_image_2.jpg",
+    "option_text": [
+      "The elastic potential energy of the spring decreases, and the spring exerts a restoring force directed along the displacement x1.",
+      "The elastic potential energy of the spring increases, and the spring exerts a restoring force directed opposite to the displacement x1.",
+      "The net force on the mass remains zero because it is held stationary, and the total mechanical energy of the system is at its minimum.",
+      "The kinetic energy of the mass is maximized at position x1, while the elastic potential energy remains unchanged."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "When an ideal spring is displaced (compressed or extended) from its equilibrium position (x=0), elastic potential energy is stored within it. According to Hooke's Law, this elastic potential energy (U_s) is given by U_s = 1/2 kx^2, where k is the spring constant and x is the displacement. Since the system moves from x=0 (equilibrium) to x=x1 (compressed state), x is non-zero, meaning the elastic potential energy increases from zero to 1/2 kx1^2. Concurrently, the spring exerts a restoring force, F = -kx, which is always directed opposite to the displacement from equilibrium. If the displacement x1 is to the right (positive x direction), the restoring force exerted by the spring on the mass will be to the left (negative x direction), thus opposing the compression. Therefore, option B is the correct theoretical description.",
+    "topic": "Mechanics",
+    "subtopic": "Elasticity and Potential Energy",
+    "image_filename": "page_122_image_2.jpg"
+  },
+  {
+    "question_text": "Consider the standing wave depicted in the figure, illustrating its profile at different phases (ωt = 0, π/2, π). From an academic perspective, which statement best characterizes the physical state of the medium's particles along the x-axis at the instant when ωt = π/2, as represented by the green line?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_140_image_0.jpg",
+    "option_text": [
+      "All particles on the wave are at their maximum positive displacement, exhibiting zero instantaneous velocity.",
+      "All particles on the wave are at their equilibrium position (zero displacement), with particles at antinodes achieving their maximum instantaneous speed.",
+      "All particles on the wave are momentarily at rest, indicating zero displacement and zero velocity everywhere.",
+      "Particles at nodes experience their maximum instantaneous velocity, while particles at antinodes are at their maximum displacement."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The image shows that at the instant ωt = π/2 (represented by the green line), the displacement 'y' is zero for all 'x' along the standing wave. This means all oscillating particles are momentarily passing through their equilibrium positions. In Simple Harmonic Motion (SHM), the velocity of an oscillating particle is maximum when its displacement from the equilibrium position is zero. Since antinodes are the points that oscillate with the largest amplitude, they consequently achieve the maximum instantaneous speed among all oscillating particles when they pass through their equilibrium position. Nodes (N) always remain at zero displacement and zero velocity.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Standing Waves",
+    "image_filename": "page_140_image_0.jpg"
+  },
+  {
+    "question_text": "Based on the adiabatic processes shown, which fundamental thermodynamic principle best explains why the gas cools during expansion (W > 0) and heats up during compression (W < 0) when there is no heat transfer (Q=0)?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_60_image_1.jpg",
+    "option_text": [
+      "The direct conversion of pressure changes into temperature variations.",
+      "The First Law of Thermodynamics, where changes in internal energy are solely due to work done.",
+      "The ideal gas law, which dictates that temperature must change with volume.",
+      "The constant specific heat capacity of the gas in an insulated system."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The image illustrates adiabatic processes, characterized by no heat exchange (Q=0) due to insulation. According to the First Law of Thermodynamics, the change in internal energy (ΔU) of a system is given by ΔU = Q - W, where Q is the heat added to the system and W is the work done by the system. Since Q=0 in an adiabatic process, the equation simplifies to ΔU = -W. \n\nDuring expansion, the gas does work on the surroundings (W > 0). Consequently, ΔU becomes negative, meaning the internal energy of the gas decreases. A decrease in internal energy directly corresponds to a decrease in temperature (Tf < Ti).\n\nDuring compression, work is done on the gas by the surroundings (W < 0). This makes ΔU positive, indicating an increase in the internal energy of the gas. An increase in internal energy leads to an increase in temperature (Tf > Ti).\n\nTherefore, the observed temperature changes are a direct consequence of the work done by or on the system, as governed by the First Law of Thermodynamics under adiabatic conditions.",
+    "topic": "Thermodynamics",
+    "subtopic": "Adiabatic Processes and First Law of Thermodynamics",
+    "image_filename": "page_60_image_1.jpg"
+  },
+  {
+    "question_text": "For a simple harmonic oscillator, as depicted in graph (a) showing its kinetic energy K(t) and potential energy U(t) as functions of time, if the period of the oscillator's displacement is T, what is the period of the energy oscillations (K(t) or U(t))?",
+    "image_path": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_122_image_0.jpg",
+    "option_text": [
+      "T",
+      "T/2",
+      "2T",
+      "4T"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "In Simple Harmonic Motion (SHM), the displacement x(t) and velocity v(t) oscillate with a period T. The potential energy U(t) is proportional to the square of the displacement (U(t) ∝ x(t)^2), and the kinetic energy K(t) is proportional to the square of the velocity (K(t) ∝ v(t)^2). Since squaring a sinusoidal function (e.g., sin(ωt) or cos(ωt)) results in a function that oscillates at twice the angular frequency (2ω), the period of the energy functions (K(t) and U(t)) is half the period of the displacement or velocity. Graph (a) visually confirms this: U(t) starts at its maximum at t=0 and returns to its maximum again at t=T/2, completing one full cycle. Similarly for K(t). Thus, the period of the energy oscillations is T/2.",
+    "topic": "Vibrations and Waves",
+    "subtopic": "Simple Harmonic Motion (SHM) Energy",
+    "image_filename": "page_122_image_0.jpg"
+  }
+]

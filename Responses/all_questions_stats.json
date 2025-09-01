@@ -1,0 +1,101 @@
+{
+  "total_images": 10,
+  "successful": 10,
+  "failed": 0,
+  "total_questions": 55,
+  "start_time": "2025-09-01T18:32:41.314977",
+  "image_results": {
+    "page_35_image_1.jpg": {
+      "status": "success",
+      "question_count": 7,
+      "difficulties": {
+        "Easy": 5,
+        "Medium": 1,
+        "Hard": 1
+      }
+    },
+    "page_122_image_2.jpg": {
+      "status": "success",
+      "question_count": 7,
+      "difficulties": {
+        "Easy": 3,
+        "Medium": 3,
+        "Hard": 1
+      }
+    },
+    "page_105_image_0.jpg": {
+      "status": "success",
+      "question_count": 6,
+      "difficulties": {
+        "Easy": 1,
+        "Medium": 3,
+        "Hard": 2
+      }
+    },
+    "page_60_image_1.jpg": {
+      "status": "success",
+      "question_count": 6,
+      "difficulties": {
+        "Easy": 3,
+        "Medium": 1,
+        "Hard": 2
+      }
+    },
+    "page_14_image_0.jpg": {
+      "status": "success",
+      "question_count": 5,
+      "difficulties": {
+        "Easy": 3,
+        "Medium": 1,
+        "Hard": 1
+      }
+    },
+    "page_147_image_4.jpg": {
+      "status": "success",
+      "question_count": 5,
+      "difficulties": {
+        "Easy": 2,
+        "Medium": 1,
+        "Hard": 2
+      }
+    },
+    "page_140_image_0.jpg": {
+      "status": "success",
+      "question_count": 7,
+      "difficulties": {
+        "Easy": 3,
+        "Medium": 1,
+        "Hard": 3
+      }
+    },
+    "page_125_image_1.jpg": {
+      "status": "success",
+      "question_count": 3,
+      "difficulties": {
+        "Easy": 1,
+        "Medium": 1,
+        "Hard": 1
+      }
+    },
+    "page_122_image_0.jpg": {
+      "status": "success",
+      "question_count": 4,
+      "difficulties": {
+        "Easy": 2,
+        "Medium": 1,
+        "Hard": 1
+      }
+    },
+    "page_39_image_0.jpg": {
+      "status": "success",
+      "question_count": 5,
+      "difficulties": {
+        "Easy": 3,
+        "Medium": 1,
+        "Hard": 1
+      }
+    }
+  },
+  "end_time": "2025-09-01T18:38:01.716549",
+  "success_rate": 100.0
+}

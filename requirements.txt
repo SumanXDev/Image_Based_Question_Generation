@@ -1,0 +1,14 @@
+# Core dependencies for Enhanced Question Generator
+google-genai>=0.9.0
+python-dotenv>=1.0.0
+Pillow>=10.0.0
+argparse
+
+# AWS S3 integration
+boto3>=1.34.0
+
+# Optional dependencies for enhanced functionality  
+typing-extensions>=4.0.0
+
+# For cloud deployment
+gunicorn>=21.0.0

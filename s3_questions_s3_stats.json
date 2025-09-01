@@ -1,0 +1,98 @@
+{
+  "total_images": 10,
+  "successful": 10,
+  "failed": 0,
+  "total_questions": 10,
+  "start_time": "2025-09-01T21:43:25.516525",
+  "s3_bucket": "images-questionbank",
+  "s3_prefix": "Diagrams/Physics/images/",
+  "global_difficulty_distribution": {
+    "Hard": 2,
+    "Easy": 4,
+    "Medium": 4
+  },
+  "image_results": {
+    "page_125_image_1.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_125_image_1.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_125_image_1.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Easy",
+      "generated_difficulty": "Easy"
+    },
+    "page_147_image_4.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_147_image_4.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_147_image_4.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Hard",
+      "generated_difficulty": "Hard"
+    },
+    "page_35_image_1.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_35_image_1.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_35_image_1.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Easy",
+      "generated_difficulty": "Easy"
+    },
+    "page_105_image_0.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_105_image_0.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_105_image_0.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Easy",
+      "generated_difficulty": "Easy"
+    },
+    "page_14_image_0.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_14_image_0.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_14_image_0.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Hard",
+      "generated_difficulty": "Hard"
+    },
+    "page_39_image_0.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_39_image_0.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_39_image_0.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Easy",
+      "generated_difficulty": "Easy"
+    },
+    "page_122_image_2.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_122_image_2.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_122_image_2.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Medium",
+      "generated_difficulty": "Medium"
+    },
+    "page_140_image_0.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_140_image_0.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_140_image_0.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Medium",
+      "generated_difficulty": "Medium"
+    },
+    "page_60_image_1.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_60_image_1.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_60_image_1.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Medium",
+      "generated_difficulty": "Medium"
+    },
+    "page_122_image_0.jpg": {
+      "status": "success",
+      "s3_key": "Diagrams/Physics/images/page_122_image_0.jpg",
+      "s3_url": "https://images-questionbank.s3.amazonaws.com/Diagrams/Physics/images/page_122_image_0.jpg",
+      "question_count": 1,
+      "assigned_difficulty": "Medium",
+      "generated_difficulty": "Medium"
+    }
+  },
+  "end_time": "2025-09-01T21:47:22.957092",
+  "success_rate": 100.0
+}

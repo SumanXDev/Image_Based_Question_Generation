@@ -1,0 +1,67 @@
+[
+  {
+    "question_text": "What does the variable 'h' represent in the given diagram, specifically related to the liquid?",
+    "image_path": "page_1_image_0.jpg",
+    "option_text": [
+      "The total height of the tank.",
+      "The height of the exit hole from the base.",
+      "The depth of the liquid surface.",
+      "The depth of the hole below the liquid surface."
+    ],
+    "correct_answer_index": 3,
+    "difficulty_level": "Easy",
+    "explanation": "The diagram explicitly labels h = y1 - y2, which is the vertical distance between the liquid's free surface (at y1) and the center of the hole (at y2). This difference represents the depth of the hole below the liquid surface."
+  },
+  {
+    "question_text": "According to the notation in the diagram, what is the approximate velocity of the liquid at the free surface (v1)?",
+    "image_path": "page_1_image_0.jpg",
+    "option_text": [
+      "v1 is equal to v2.",
+      "v1 is approximately zero.",
+      "v1 is always greater than v2.",
+      "v1 depends only on atmospheric pressure."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The diagram clearly indicates 'v1 ≈ 0'. This is a standard assumption in the application of Torricelli's Law when the cross-sectional area of the liquid reservoir is significantly larger than the area of the efflux hole, meaning the liquid surface descends very slowly."
+  },
+  {
+    "question_text": "Based on Torricelli's Law and the information in the diagram, if the depth 'h' of the hole below the surface were to increase, how would the efflux velocity 'v2' change, assuming all other factors remain constant?",
+    "image_path": "page_1_image_0.jpg",
+    "option_text": [
+      "v2 would decrease.",
+      "v2 would increase.",
+      "v2 would remain the same.",
+      "v2 would become zero."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "Torricelli's Law states that the efflux velocity v2 = sqrt(2gh). From this equation, v2 is directly proportional to the square root of h. Therefore, if the depth h increases, the efflux velocity v2 must also increase."
+  },
+  {
+    "question_text": "The derivation of Torricelli's Law, which determines the efflux velocity v2, primarily relies on which fundamental principle of fluid dynamics?",
+    "image_path": "page_1_image_0.jpg",
+    "option_text": [
+      "Archimedes' Principle",
+      "Pascal's Principle",
+      "Bernoulli's Principle",
+      "Newton's Third Law"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "Torricelli's Law is derived by applying Bernoulli's principle between two points: the free surface of the liquid (where pressure is atmospheric and velocity is approximately zero) and the efflux hole (where pressure is also atmospheric and velocity is v2)."
+  },
+  {
+    "question_text": "The water jet exits the hole at height y2 and follows a parabolic trajectory, landing at a horizontal distance x. If the total height of the liquid is y1, at what depth 'h' (distance below the free surface) should the hole be located to achieve the maximum possible horizontal range 'x'?",
+    "image_path": "page_1_image_0.jpg",
+    "option_text": [
+      "When the hole is at the very bottom of the tank (h = y1).",
+      "When the hole is at half the total liquid depth (h = y1/2).",
+      "When the hole is just below the surface (h is very small).",
+      "The maximum range is achieved regardless of the hole's depth."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "The efflux velocity is v2 = sqrt(2gh). The time it takes for the water to fall a height y2 is t = sqrt(2y2/g). The horizontal range x is v2*t = sqrt(2gh) * sqrt(2y2/g) = 2*sqrt(h*y2). Since h = y1 - y2, we have x = 2*sqrt((y1 - y2)y2). To maximize x, we need to maximize the term (y1 - y2)y2. Let f(y2) = y1*y2 - y2^2. Taking the derivative with respect to y2 and setting it to zero: df/dy2 = y1 - 2y2 = 0, which implies y2 = y1/2. If y2 = y1/2, then h = y1 - y2 = y1 - y1/2 = y1/2. Thus, the maximum horizontal range occurs when the hole is at half the total liquid depth."
+  }
+]

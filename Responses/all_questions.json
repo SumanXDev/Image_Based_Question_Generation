@@ -1,0 +1,827 @@
+[
+  {
+    "question_text": "What do the variables 'a' and 'b' represent in the initial state of the rectangle shown in the diagram?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "Side lengths of the original rectangle",
+      "Incremental changes to the dimensions",
+      "Total area of the rectangle",
+      "Perimeter of the rectangle"
+    ],
+    "correct_answer_index": 0,
+    "difficulty_level": "Easy",
+    "explanation": "The arrows in the diagram clearly indicate 'a' and 'b' as the horizontal and vertical dimensions, respectively, of the primary rectangle before any changes are applied. They define the initial shape and size.",
+    "topic": "Geometry",
+    "subtopic": "Dimensions of Shapes"
+  },
+  {
+    "question_text": "In the context of this diagram, what do 'Δa' and 'Δb' signify?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "The original values of the dimensions",
+      "Decreases in the dimensions of the rectangle",
+      "Increments or small changes in the dimensions 'a' and 'b'",
+      "Multiplication factors for the dimensions"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "The Greek letter Delta (Δ) is conventionally used in mathematics and science to denote a change or increment in a variable. In the diagram, Δa and Δb are shown as additions or extensions to the original sides 'a' and 'b', respectively.",
+    "topic": "Mathematics",
+    "subtopic": "Notation and Variables"
+  },
+  {
+    "question_text": "Which expression accurately represents the area of the smallest rectangular region highlighted in the bottom-right corner of the diagram?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "a ⋅ b",
+      "a ⋅ Δb",
+      "Δa ⋅ b",
+      "Δa ⋅ Δb"
+    ],
+    "correct_answer_index": 3,
+    "difficulty_level": "Easy",
+    "explanation": "The diagram explicitly labels the dimensions of the small rectangle in the bottom-right corner as Δa (width) and Δb (height). The area of any rectangle is found by multiplying its width by its height, hence its area is Δa ⋅ Δb.",
+    "topic": "Geometry",
+    "subtopic": "Area Calculation"
+  },
+  {
+    "question_text": "If the original rectangle has dimensions 'a' and 'b' as shown, what is its initial area?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "a + b",
+      "2(a + b)",
+      "a ⋅ b",
+      "a / b"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "The formula for the area of a rectangle is length multiplied by width. Given the initial dimensions are 'a' and 'b', the initial area is simply 'a ⋅ b'.",
+    "topic": "Geometry",
+    "subtopic": "Area Formulae"
+  },
+  {
+    "question_text": "After the increments Δa and Δb are added, what are the new total dimensions of the enlarged rectangle?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "a ⋅ Δa and b ⋅ Δb",
+      "a - Δa and b - Δb",
+      "a + Δa and b + Δb",
+      "a / Δa and b / Δb"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "The diagram visually demonstrates that Δa is an extension added to the original dimension 'a', and Δb is an extension added to the original dimension 'b'. Therefore, the new total length becomes (a + Δa) and the new total width becomes (b + Δb).",
+    "topic": "Algebra",
+    "subtopic": "Basic Operations"
+  },
+  {
+    "question_text": "The total change in the area of the rectangle, ΔA, due to the increments Δa and Δb, can be found by summing the areas of all the newly added regions. Which expression correctly represents this total change in area?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "ΔA = (a + Δa)(b + Δb)",
+      "ΔA = aΔb + bΔa + ΔaΔb",
+      "ΔA = aΔb + bΔa",
+      "ΔA = ΔaΔb"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The original area is A = ab. The new area is A_new = (a + Δa)(b + Δb) = ab + aΔb + bΔa + ΔaΔb. The total change in area ΔA = A_new - A = (ab + aΔb + bΔa + ΔaΔb) - ab = aΔb + bΔa + ΔaΔb. These three terms correspond to the areas of the three new regions: aΔb (the horizontal strip added to 'a'), bΔa (the vertical strip added to 'b'), and ΔaΔb (the small corner rectangle).",
+    "topic": "Algebra / Geometry",
+    "subtopic": "Change in Area / Area Decomposition"
+  },
+  {
+    "question_text": "In the context of differential calculus, when Δa and Δb become infinitesimally small (denoted as da and db), the total differential of the area dA (where A = ab) is given as dA = a db + b da. What is the primary theoretical reason for excluding the term corresponding to ΔaΔb in this differential form?",
+    "image_path": "page_35_image_1.jpg",
+    "option_text": [
+      "The term ΔaΔb represents an area that is impossible to calculate with infinitesimals.",
+      "The term ΔaΔb is considered a 'second-order' infinitesimal, becoming negligible compared to the 'first-order' terms (a db and b da) as Δa and Δb approach zero.",
+      "The term ΔaΔb is only relevant for negative changes in dimensions.",
+      "The term ΔaΔb is already accounted for within the 'a db' and 'b da' terms."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "The total change in area is ΔA = aΔb + bΔa + ΔaΔb. As Δa and Δb approach zero to become infinitesimals da and db, terms like aΔb and bΔa are considered 'first-order' infinitesimals because they involve a product of a finite quantity and one infinitesimal. The term ΔaΔb, however, involves the product of two infinitesimals, making it a 'second-order' infinitesimal. In calculus, second-order infinitesimals are infinitely smaller than first-order infinitesimals and are therefore considered negligible when determining the total differential. This approximation leads directly to the product rule for differentiation: d(ab) = a db + b da.",
+    "topic": "Calculus",
+    "subtopic": "Total Differential / Infinitesimals / Product Rule"
+  },
+  {
+    "question_text": "In Figure (a), what does the position marked 'x = 0' signify for the spring-mass system?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "The point of maximum compression.",
+      "The point where the block's velocity is maximum during oscillation.",
+      "The equilibrium position where the net force from the spring on the block is zero.",
+      "The starting point for measuring the spring's stiffness coefficient."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "Figure (a) explicitly labels the position 'x=0' as the 'Equilibrium position'. By definition, at equilibrium, the spring is neither stretched nor compressed, and thus exerts no force, resulting in a net force of zero from the spring on the block.",
+    "topic": "Mechanics",
+    "subtopic": "Simple Harmonic Motion (SHM) / Equilibrium"
+  },
+  {
+    "question_text": "Based on Figure (b), when the spring is stretched to position x1, in which direction does the spring exert a restoring force on the block?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "To the right, away from the wall.",
+      "To the left, towards the equilibrium position.",
+      "Upwards, perpendicular to the surface.",
+      "There is no restoring force as it is held by an external agent."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "According to Hooke's Law, the restoring force exerted by a spring always acts in a direction opposite to the displacement from its equilibrium position. Since the spring is stretched to the right (positive displacement), the restoring force will pull the block to the left, back towards x=0.",
+    "topic": "Mechanics",
+    "subtopic": "Hooke's Law / Restoring Force"
+  },
+  {
+    "question_text": "What is the state of the spring in Figure (a) compared to its natural, undeformed length?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "It is compressed.",
+      "It is stretched.",
+      "It is at its natural, undeformed length.",
+      "It is undergoing maximum acceleration."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "Figure (a) shows the system at the 'Equilibrium position' where x=0. This signifies that the spring is neither compressed nor stretched and is at its natural length.",
+    "topic": "Mechanics",
+    "subtopic": "Spring Properties / Equilibrium"
+  },
+  {
+    "question_text": "If the spring constant (k) of the spring is known, what theoretical principle can be used to calculate the magnitude of the force exerted by the spring when it is stretched to position x1, as shown in Figure (b)?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "Newton's Second Law of Motion.",
+      "The Law of Conservation of Energy.",
+      "Hooke's Law.",
+      "Archimedes' Principle."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "Hooke's Law, stated as F = -kx (where F is the restoring force, k is the spring constant, and x is the displacement from equilibrium), directly relates the force exerted by a spring to its displacement and spring constant.",
+    "topic": "Mechanics",
+    "subtopic": "Hooke's Law"
+  },
+  {
+    "question_text": "From a practical application perspective, if this spring-mass system were incorporated into a simple force-measuring device (like a basic scale), what quantity would the displacement x1 in Figure (b) directly help to determine?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "The density of the block.",
+      "The magnitude of the external force applied to stretch the spring.",
+      "The coefficient of static friction between the block and the surface.",
+      "The kinetic energy of the block at x=0."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "In a force-measuring device, an external force causes the spring to displace. According to Hooke's Law (F = kx), the displacement (x1) is directly proportional to the applied force, assuming the spring constant (k) is known. Thus, measuring x1 allows for the determination of the applied force.",
+    "topic": "Applied Physics / Measurement",
+    "subtopic": "Force Measurement / Hooke's Law Applications"
+  },
+  {
+    "question_text": "When the spring is stretched to position x1 as in Figure (b) and held stationary, what form of energy is primarily stored within the spring system?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "Kinetic energy.",
+      "Gravitational potential energy.",
+      "Elastic potential energy.",
+      "Thermal energy."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "When a spring is stretched or compressed from its equilibrium position, it stores energy due to its deformation. This stored energy is known as elastic potential energy, given by the formula U = (1/2)kx^2. Since the system is held stationary, there is no kinetic energy.",
+    "topic": "Energy",
+    "subtopic": "Potential Energy / Elastic Potential Energy"
+  },
+  {
+    "question_text": "In the practical design of a precision instrument utilizing a spring-mass system (e.g., an accelerometer or a highly accurate scale), why is maintaining the 'equilibrium position' (x=0) as a stable and well-defined reference point critically important for its accuracy and functionality?",
+    "image_path": "page_122_image_2.jpg",
+    "option_text": [
+      "It ensures the spring never experiences any force, prolonging its lifespan.",
+      "It is the only position where the system can be visually balanced and aesthetically pleasing.",
+      "All measurements of displacement and subsequent calculations of force or acceleration are fundamentally relative to this precise zero-force reference.",
+      "It prevents the system from being affected by environmental factors like temperature changes."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "For precision instruments, the equilibrium position (x=0) serves as the crucial baseline or 'zero-point' calibration. Any force or acceleration applied to the system is determined by measuring the displacement (x) *from this equilibrium*. If the equilibrium point is unstable, shifts, or is not accurately defined, all subsequent measurements will be inaccurate, compromising the instrument's functionality and reliability. The instrument is designed to translate displacement from a known zero-force state into a measurable quantity.",
+    "topic": "Applied Physics / Measurement Science",
+    "subtopic": "Calibration / System Design / Simple Harmonic Motion Applications"
+  },
+  {
+    "question_text": "In diagram (a), which describes an ideal gas, what physical quantity is kept constant along each curved line labeled T1, T2, T3, T4?",
+    "image_path": "page_105_image_0.jpg",
+    "option_text": [
+      "Volume",
+      "Pressure",
+      "Temperature",
+      "Number of moles"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "The label 'Isotherms' explicitly indicates that these are curves of constant temperature. For an ideal gas (PV=nRT), if the number of moles (n) and the gas constant (R) are also constant, then for each isotherm, the temperature (T) is held fixed, meaning PV = constant.",
+    "topic": "Ideal Gas Law",
+    "subtopic": "Isotherms"
+  },
+  {
+    "question_text": "In diagram (b) for a non-ideal gas, what distinct phase change behavior is observed along isotherms at temperatures T < Tc (e.g., T1 or T2) that is not observed at temperatures T > Tc (e.g., T3 or T4)?",
+    "image_path": "page_105_image_0.jpg",
+    "option_text": [
+      "The gas follows ideal gas law perfectly.",
+      "The gas undergoes solidification at constant pressure.",
+      "A liquid-vapor phase coexistence region with constant pressure during condensation/evaporation is observed.",
+      "The gas always behaves as a supercritical fluid."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "For temperatures below the critical temperature (T < Tc), as a gas is compressed isothermally, it reaches a point where it starts to condense into a liquid. During this phase transition (liquid-vapor coexistence), both phases are present, and the pressure remains constant until all the gas has turned into liquid. This is represented by the horizontal segments within the 'Liquid-vapor' dome. Above Tc, no distinct liquid phase forms, only a supercritical fluid.",
+    "topic": "Real Gases",
+    "subtopic": "Phase Transitions"
+  },
+  {
+    "question_text": "Point 'c' in diagram (b) represents the critical point. What is special about the substance at the critical temperature (Tc) and critical pressure corresponding to point 'c'?",
+    "image_path": "page_105_image_0.jpg",
+    "option_text": [
+      "It is the only point where the substance can exist as a solid.",
+      "Above this temperature, it is impossible to liquefy the gas by increasing pressure alone.",
+      "At this point, the substance is an ideal gas.",
+      "It is the triple point where solid, liquid, and gas phases coexist."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The critical temperature (Tc) is the temperature above which a distinct liquid phase cannot be formed, no matter how much pressure is applied. Above Tc, the substance exists as a supercritical fluid, where the liquid and gas phases are indistinguishable. Point 'c' is the critical point, the specific state at Tc and critical pressure where the properties of liquid and vapor phases merge.",
+    "topic": "Real Gases",
+    "subtopic": "Critical Point"
+  },
+  {
+    "question_text": "Consider a process where the non-ideal gas in diagram (b) is isothermally compressed from a large volume in the vapor region at T2 to a small volume in the liquid region. During which part of this compression does the system transition from a pure vapor state to a pure liquid state, experiencing both phases simultaneously?",
+    "image_path": "page_105_image_0.jpg",
+    "option_text": [
+      "Along the curve from a high volume to point 'a'.",
+      "Along the horizontal segment between points 'a' and 'b'.",
+      "Along the curve from point 'b' to a low volume.",
+      "Only at point 'c'."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The horizontal segment between points 'a' and 'b' (at constant pressure) represents the liquid-vapor coexistence region. During an isothermal compression along this segment, vapor continuously condenses into liquid, with both phases present, until all the vapor has turned into liquid at point 'b'. Point 'a' marks the start of condensation (saturated vapor), and point 'b' marks the completion of condensation (saturated liquid).",
+    "topic": "Thermodynamics",
+    "subtopic": "Phase Changes in Real Gases"
+  },
+  {
+    "question_text": "Compare the isotherms for the ideal gas (a) and the non-ideal gas (b) at high temperatures (e.g., T4). Although both appear to follow a similar trend (P decreases as V increases), what fundamental physical interaction, absent in the ideal gas model, primarily accounts for the non-ideal gas's deviation from the ideal gas law, especially at high pressures and low volumes?",
+    "image_path": "page_105_image_0.jpg",
+    "option_text": [
+      "Gravitational forces between gas molecules.",
+      "The negligible volume occupied by gas molecules in the ideal gas model.",
+      "Intermolecular attractive and repulsive forces between real gas molecules.",
+      "Quantum mechanical tunneling effects."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "The ideal gas model assumes point-like particles with no intermolecular forces. Real gases, however, have finite-sized molecules and experience both attractive and repulsive intermolecular forces (e.g., van der Waals forces). At high pressures (low volumes) and lower temperatures, the molecules are closer, and these forces become significant. Attractive forces tend to reduce the measured pressure compared to an ideal gas, while repulsive forces (due to finite molecular volume) effectively increase the observed pressure for a given volume. The deviations of real gas isotherms from ideal gas behavior are a direct consequence of these intermolecular interactions. While the finite volume of molecules (option 2) is a correction, the underlying cause is the *interaction* itself.",
+    "topic": "Real Gases vs. Ideal Gases",
+    "subtopic": "Intermolecular Forces and Deviations"
+  },
+  {
+    "question_text": "For a non-ideal gas shown in diagram (b), explain why the pressure remains constant along the horizontal segment of an isotherm (e.g., from point 'a' to 'b') within the liquid-vapor coexistence region.",
+    "image_path": "page_105_image_0.jpg",
+    "option_text": [
+      "The temperature of the system instantaneously changes to allow for constant pressure.",
+      "Work done by the system precisely balances the heat added, maintaining constant pressure.",
+      "During a phase transition at constant temperature and pressure, the chemical potentials of the two coexisting phases (liquid and vapor) must be equal.",
+      "The density of the substance becomes infinite, preventing further pressure change."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "In a system at thermodynamic equilibrium, the chemical potential (μ) of any component must be the same in all phases where it is present. For a single-component system undergoing a phase transition (like liquid to vapor) at a constant temperature, the system reaches equilibrium when μ_liquid = μ_vapor. This condition dictates a unique saturation pressure for that specific temperature. As long as both liquid and vapor phases coexist isothermally, the system must remain at this saturation pressure to maintain equilibrium, meaning the pressure stays constant even as the relative amounts of liquid and vapor change.",
+    "topic": "Phase Equilibrium",
+    "subtopic": "Chemical Potential"
+  },
+  {
+    "question_text": "According to the First Law of Thermodynamics and the information provided for the adiabatic process shown, what is the relationship between the change in internal energy (ΔU) and the work done by the system (W)?",
+    "image_path": "page_60_image_1.jpg",
+    "option_text": [
+      "ΔU = W",
+      "ΔU = -W",
+      "ΔU = Q - W",
+      "ΔU = Q + W"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The image explicitly states \"Insulation\" and \"Q=0\" for both expansion and compression, indicating an adiabatic process where no heat is exchanged. The First Law of Thermodynamics is ΔU = Q - W (where W is work done BY the system, as indicated by W>0 for expansion). Since Q=0, the equation simplifies to ΔU = -W.",
+    "topic": "Thermodynamics",
+    "subtopic": "First Law of Thermodynamics"
+  },
+  {
+    "question_text": "During the adiabatic expansion process shown in the image, how does the final temperature (T_f) compare to the initial temperature (T_i)?",
+    "image_path": "page_60_image_1.jpg",
+    "option_text": [
+      "T_f > T_i",
+      "T_f < T_i",
+      "T_f = T_i",
+      "Cannot be determined without knowing the gas."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The image explicitly states \"T_f < T_i\" for the expansion phase. In an adiabatic expansion, the gas does work on the surroundings (W>0). Since Q=0, the internal energy of the gas decreases (ΔU = -W < 0), which for an ideal gas directly leads to a drop in temperature.",
+    "topic": "Thermodynamics",
+    "subtopic": "Adiabatic Processes"
+  },
+  {
+    "question_text": "What type of thermodynamic process is depicted in the image, based on the statement \"Q=0\" and the presence of insulation?",
+    "image_path": "page_60_image_1.jpg",
+    "option_text": [
+      "Isothermal",
+      "Isobaric",
+      "Adiabatic",
+      "Isochoric"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "An adiabatic process is defined as one where no heat is exchanged with the surroundings, meaning Q = 0. The insulation shown around the cylinder and the explicit label \"Q=0\" in the system states confirm this type of process.",
+    "topic": "Thermodynamics",
+    "subtopic": "Thermodynamic Processes"
+  },
+  {
+    "question_text": "For an ideal gas undergoing the adiabatic compression depicted, if the volume decreases (as shown by the piston moving down), which of the following statements about the change in pressure and temperature is true?",
+    "image_path": "page_60_image_1.jpg",
+    "option_text": [
+      "Pressure increases, Temperature decreases.",
+      "Pressure decreases, Temperature increases.",
+      "Pressure increases, Temperature increases.",
+      "Pressure decreases, Temperature decreases."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "The image shows for compression that T_f > T_i, meaning temperature increases. For an adiabatic process, the relationship PV^γ = constant holds, where γ > 1. If volume (V) decreases, then pressure (P) must increase significantly (P = constant / V^γ) to maintain the constant product. Additionally, for an ideal gas, PV = nRT. With V decreasing and T increasing (as shown and from ΔU = -W where W<0 for compression implies ΔU>0), P must increase to satisfy the ideal gas law.",
+    "topic": "Thermodynamics",
+    "subtopic": "Adiabatic Process Properties"
+  },
+  {
+    "question_text": "An ideal monatomic gas (γ = 5/3) is initially at a pressure P_i and temperature T_i. If it undergoes the adiabatic expansion shown, doubling its volume (V_f = 2V_i), what is the final temperature (T_f) in terms of T_i?",
+    "image_path": "page_60_image_1.jpg",
+    "option_text": [
+      "T_f = T_i / (2^(5/3))",
+      "T_f = T_i / (2^(2/3))",
+      "T_f = T_i * (2^(2/3))",
+      "T_f = T_i * (2^(5/3))"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "For a reversible adiabatic process involving an ideal gas, the relationship between temperature and volume is given by T * V^(γ-1) = constant. Therefore, we can write T_i * V_i^(γ-1) = T_f * V_f^(γ-1).\nWe are given V_f = 2V_i and γ = 5/3. First, calculate γ-1 = 5/3 - 1 = 2/3.\nNow, substitute the values into the equation:\nT_f = T_i * (V_i / V_f)^(γ-1)\nT_f = T_i * (V_i / (2V_i))^(2/3)\nT_f = T_i * (1/2)^(2/3)\nT_f = T_i / (2^(2/3)).",
+    "topic": "Thermodynamics",
+    "subtopic": "Adiabatic Process Calculations"
+  },
+  {
+    "question_text": "An ideal diatomic gas (Cv = 5R/2) undergoes the adiabatic expansion shown, performing 1500 J of work (W = 1500 J). If there is 1 mole of the gas (n = 1), by how much does its temperature change (ΔT)? (Use R = 8.314 J/(mol·K)).",
+    "image_path": "page_60_image_1.jpg",
+    "option_text": [
+      "ΔT = -180.4 K",
+      "ΔT = -72.2 K",
+      "ΔT = 72.2 K",
+      "ΔT = 180.4 K"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "For an adiabatic process, no heat is exchanged, so Q = 0. According to the First Law of Thermodynamics, the change in internal energy (ΔU) is related to heat (Q) and work done by the system (W) by ΔU = Q - W. Since Q = 0, ΔU = -W.\nGiven W = 1500 J, then ΔU = -1500 J.\nFor an ideal gas, the change in internal energy is also given by ΔU = n * Cv * ΔT.\nWe are given n = 1 mole and Cv = 5R/2. Using R = 8.314 J/(mol·K):\nCv = (5/2) * 8.314 J/(mol·K) = 2.5 * 8.314 J/(mol·K) = 20.785 J/(mol·K).\nNow, substitute these values into the internal energy equation:\n-1500 J = (1 mol) * (20.785 J/(mol·K)) * ΔT\n-1500 J = 20.785 J/K * ΔT\nΔT = -1500 J / 20.785 J/K\nΔT ≈ -72.17 K, which rounds to -72.2 K.",
+    "topic": "Thermodynamics",
+    "subtopic": "First Law and Internal Energy Calculation"
+  },
+  {
+    "question_text": "The hydraulic system shown in the image primarily demonstrates which fundamental principle of fluid mechanics?",
+    "image_path": "page_14_image_0.jpg",
+    "option_text": [
+      "Archimedes' Principle",
+      "Bernoulli's Principle",
+      "Pascal's Principle",
+      "Newton's Third Law"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "Pascal's Principle states that a pressure change at any point in a confined incompressible fluid is transmitted throughout the fluid such that the same change occurs everywhere. This principle is the foundation for how hydraulic systems like the one shown multiply force to lift heavy loads.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Hydraulic Systems, Pascal's Principle"
+  },
+  {
+    "question_text": "In the hydraulic lift depicted, a relatively small input force F1 can lift a large load (car) due to which characteristic of the system?",
+    "image_path": "page_14_image_0.jpg",
+    "option_text": [
+      "The incompressibility of the fluid.",
+      "The large volume of fluid used.",
+      "The difference in the cross-sectional areas of the pistons.",
+      "The specific density of the fluid."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "According to Pascal's Principle, the pressure applied by F1 (P1 = F1/A1) is transmitted throughout the fluid. This pressure then acts on the larger piston (A2), creating a larger output force F2 = P1 * A2 = (F1/A1) * A2. Therefore, if A2 is significantly larger than A1, the output force F2 will be much greater than the input force F1, demonstrating force multiplication.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Hydraulic Systems, Force Multiplication"
+  },
+  {
+    "question_text": "If the input piston (with area A1) is pushed down, what happens to the pressure at various points within the enclosed fluid?",
+    "image_path": "page_14_image_0.jpg",
+    "option_text": [
+      "The pressure decreases further away from the input piston.",
+      "The pressure increases only under the input piston.",
+      "The pressure is transmitted undiminished throughout the entire fluid.",
+      "The pressure increases only at the output piston (area A2)."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "This is a direct consequence of Pascal's Principle. Any pressure applied to an enclosed, incompressible fluid is transmitted equally and undiminished to every portion of the fluid and the walls of the containing vessel. Therefore, a pressure change at A1 causes the same pressure change everywhere in the fluid.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Pressure Transmission"
+  },
+  {
+    "question_text": "If the small piston (area A1) is pushed down by a distance 'd1', and the large piston (area A2) rises by a distance 'd2', what is the relationship between 'd1' and 'd2', assuming the fluid is incompressible?",
+    "image_path": "page_14_image_0.jpg",
+    "option_text": [
+      "d1 = d2",
+      "d1 * A1 = d2 * A2",
+      "d1 / A1 = d2 / A2",
+      "d1 * A2 = d2 * A1"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "For an incompressible fluid, the volume of fluid displaced by the input piston must be equal to the volume of fluid displaced by the output piston. The volume displaced by the input piston is V1 = A1 * d1. The volume displaced by the output piston is V2 = A2 * d2. Since V1 = V2, it follows that A1 * d1 = A2 * d2.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Hydraulic Systems, Work and Energy Conservation"
+  },
+  {
+    "question_text": "In the scenario depicted, the fluid in the left column is at a height 'h' above the fluid in the right column at the dashed reference line. If the fluid has density 'ρ', what is the correct relationship for the forces when the system is in static equilibrium and supporting the load? (Assume 'g' is the acceleration due to gravity)",
+    "image_path": "page_14_image_0.jpg",
+    "option_text": [
+      "F1/A1 = F2/A2",
+      "(F1/A1) + ρgh = F2/A2",
+      "F1/A1 = (F2/A2) + ρgh",
+      "F1 * A1 = F2 * A2 + ρgh"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "For the system to be in static equilibrium, the pressure at any horizontal level within the continuous fluid must be equal. Taking the dashed line as the reference level: \n- The pressure at this level on the right side (under A2) is P_right = F2/A2.\n- The pressure at this level on the left side (under A1) is due to the applied force F1 and the hydrostatic pressure from the column of fluid of height 'h' above the reference line. So, P_left = (F1/A1) + ρgh.\nEquating these pressures for equilibrium: (F1/A1) + ρgh = F2/A2.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Hydraulic Systems, Hydrostatic Pressure"
+  },
+  {
+    "question_text": "What is the primary function of the device labeled 'Vibrator' in this experimental setup?",
+    "image_path": "page_147_image_4.jpg",
+    "option_text": [
+      "To measure the string's length.",
+      "To apply tension to the string.",
+      "To generate mechanical oscillations in the string.",
+      "To absorb wave energy at the end of the string."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "The 'Vibrator' is explicitly shown connected to the string at point A, indicating its role in initiating and sustaining the wave motion by generating mechanical oscillations. It acts as the source of the wave.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Wave Generation"
+  },
+  {
+    "question_text": "Based on the standing wave pattern shown in the image, how many antinodes are present on the string between points A and B?",
+    "image_path": "page_147_image_4.jpg",
+    "option_text": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "Antinodes are points of maximum displacement in a standing wave. Visually inspecting the solid and dashed lines, there are three distinct 'loops' or points of maximum displacement along the length of the string, indicating three antinodes. The label L=3λ/2 also confirms three half-wavelengths, with each half-wavelength containing one antinode.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Standing Waves, Antinodes"
+  },
+  {
+    "question_text": "In this experimental setup, what is the practical purpose of the hanging mass 'm' and the pulley system?",
+    "image_path": "page_147_image_4.jpg",
+    "option_text": [
+      "To measure the string's linear density.",
+      "To provide the necessary tension in the string.",
+      "To damp the vibrations and prevent resonance.",
+      "To adjust the frequency of the vibrator."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The hanging mass 'm' exerts a gravitational force (mg) downwards. This force is transmitted through the pulley system to create tension (T) in the string. Tension is a crucial parameter for determining the wave speed (v = sqrt(T/μ)) and thus the resonant frequencies of the standing waves formed on the string.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Standing Waves, String Tension"
+  },
+  {
+    "question_text": "If this setup is used to demonstrate the principles of a string instrument, and a musician wants to increase the fundamental pitch (frequency) of the string without changing the string's material or length, which adjustment would achieve this?",
+    "image_path": "page_147_image_4.jpg",
+    "option_text": [
+      "Decreasing the mass 'm'.",
+      "Using a thicker string (higher linear density).",
+      "Increasing the mass 'm'.",
+      "Increasing the frequency of the vibrator to excite a higher harmonic."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "The fundamental frequency (pitch) of a vibrating string is given by the formula f = (1/2L) * sqrt(T/μ), where T is the tension and μ is the linear mass density. Increasing the mass 'm' directly increases the tension T (since T = mg). A higher tension T results in a higher wave speed (v = sqrt(T/μ)), which in turn leads to a higher fundamental frequency (f). Options A and B would decrease the fundamental frequency. Option D changes the harmonic, not the fundamental pitch of the string itself.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "String Instruments, Frequency, Tension, Pitch"
+  },
+  {
+    "question_text": "In designing a string resonance experiment, if the goal is to specifically excite only the fundamental mode and its odd harmonics (e.g., 1st, 3rd, 5th, etc.) while suppressing even harmonics, what modification to the boundary conditions shown would be most effective?",
+    "image_path": "page_147_image_4.jpg",
+    "option_text": [
+      "Ensure both ends A and B are perfectly fixed nodes.",
+      "Make end A a fixed node and replace the pulley at B with a completely free end (an antinode).",
+      "Replace the vibrator at A with a fixed clamp and pluck the string exactly at its midpoint.",
+      "Increase the string's length L while keeping tension and linear density constant."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "For a string fixed at both ends (nodes), all integer harmonics (n=1, 2, 3, ...) are possible. To excite only odd harmonics, the boundary conditions must be such that one end is a node and the other is an antinode. This configuration ensures that the resonant wavelengths satisfy L = (2n-1)λ/4 (where n=1, 2, 3...), which corresponds to only the odd multiples of the fundamental frequency for that specific setup. Making end A a fixed node and end B a free end (an antinode, for example, a very light ring sliding on a frictionless rod) would achieve this. Plucking at the midpoint or increasing length would not fundamentally change the series of possible harmonics.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Standing Waves, Boundary Conditions, Harmonics, Resonance Modes"
+  },
+  {
+    "question_text": "In the context of a vibrating string instrument (like a guitar or violin), which points on the string would represent the 'Nodes' as depicted in the image, where the string effectively remains stationary?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "Points of maximum vibration, like the center of a guitar string when plucked.",
+      "Points where the string is fixed, such as the bridge and the fret/nut.",
+      "Points where the wave appears to momentarily flatten out.",
+      "Points where the string reaches its highest or lowest displacement."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "Nodes (N) in a standing wave are points of zero displacement. In a string instrument, the string is fixed at the bridge and the nut (or frets when pressed), and these fixed points do not vibrate, thus acting as nodes.",
+    "topic": "Waves and Vibrations",
+    "subtopic": "Standing Waves in Musical Instruments"
+  },
+  {
+    "question_text": "A microwave oven uses standing waves to heat food. Based on the image, what does the label '2A' at an Antinode (A) practically signify regarding the wave's effect on the food?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "It's the point where the microwave energy is completely cancelled out.",
+      "It represents the maximum possible amplitude or intensity of the microwave radiation at that location.",
+      "It indicates the exact wavelength of the microwave.",
+      "It signifies the frequency of the microwave radiation."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The label '2A' at an Antinode (A) represents the maximum amplitude of displacement. In a microwave oven, antinodes correspond to regions of maximum electric field intensity, where the food absorbs the most energy and heats up fastest. This explains why food heats unevenly without a turntable.",
+    "topic": "Waves and Electromagnetic Spectrum",
+    "subtopic": "Standing Waves in Resonators (Microwave Ovens)"
+  },
+  {
+    "question_text": "The image shows the standing wave at different moments in time (ωt = 0, π/2, π). In a practical demonstration of a standing wave on a stretched string, which of these snapshots would correspond to the string appearing as a straight line, momentarily not vibrating?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "When ωt = 0 (red curve)",
+      "When ωt = π/2 (green line)",
+      "When ωt = π (blue dashed curve)",
+      "Both A and C"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "At ωt = π/2, all points along the standing wave are at their equilibrium position (y=0). This corresponds to the moment when the string passes through the straight-line configuration, before moving to the opposite extreme of its vibration cycle.",
+    "topic": "Waves and Oscillations",
+    "subtopic": "Phase and Time Evolution of Standing Waves"
+  },
+  {
+    "question_text": "To effectively observe a stable and clear standing wave pattern, like the one shown, on a stretched string (e.g., using a mechanical vibrator), what critical condition related to the driving frequency must be met for practical demonstration?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "The driving frequency must be extremely high to ensure rapid oscillations.",
+      "The driving frequency must be very low, near zero, for slow observation.",
+      "The driving frequency must match one of the natural resonant frequencies of the string.",
+      "The driving frequency must be continuously varied over a wide range."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "Standing waves are prominently formed and sustained when the driving frequency matches one of the natural resonant frequencies of the system. This phenomenon is called resonance, where the system efficiently absorbs energy from the driver, leading to large-amplitude standing waves.",
+    "topic": "Waves and Resonance",
+    "subtopic": "Formation of Standing Waves"
+  },
+  {
+    "question_text": "The image shows a standing wave with wavelength λ. In the design of an efficient half-wave dipole antenna for transmitting radio waves, the total physical length of the antenna element is often set to λ/2. How does the concept of antinodes, as shown in the image (representing maximum displacement), practically apply to the current distribution along such an antenna?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "The current is maximum at the physical ends of the λ/2 antenna, similar to the nodes in the image.",
+      "The current is minimum at the feed point (center) and maximum at the physical ends, similar to antinodes.",
+      "The current is maximum at the feed point (center) of the λ/2 antenna, corresponding to a current antinode.",
+      "The current is uniform along the entire length of the antenna for efficient transmission."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "For a half-wave dipole antenna, the radio frequency current forms a standing wave pattern. The current is maximum at the center (feed point) of the antenna, which is analogous to a displacement antinode (A) in the image. The current is zero at the physical ends of the antenna, which are current nodes. This current distribution is crucial for efficient radiation of electromagnetic waves.",
+    "topic": "Electromagnetism and Waves",
+    "subtopic": "Standing Waves in Antennas"
+  },
+  {
+    "question_text": "Imagine an advanced acoustic levitation setup using ultrasonic standing waves to suspend small particles. If the image represents the displacement of air molecules, and particles are typically trapped at displacement nodes (N), what practical adjustment would be needed to precisely shift all trapped particles from their current node positions to the next antinode (A) positions without changing the wave frequency?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "Increase the amplitude of the ultrasonic waves significantly.",
+      "Introduce a second wave with the same frequency but exactly out of phase (180 degrees).",
+      "Shift the phase of one of the interfering waves by π (180 degrees).",
+      "Shift the position of the sound source or a reflector by a quarter wavelength (λ/4)."
+    ],
+    "correct_answer_index": 3,
+    "difficulty_level": "Hard",
+    "explanation": "Acoustic levitation usually traps particles at displacement nodes (points of zero displacement and maximum pressure). To shift these trapped particles to locations that were previously antinodes (points of maximum displacement and minimum pressure), the entire standing wave pattern must be spatially shifted. Shifting the source or reflector by a quarter wavelength (λ/4) effectively moves all nodes to the previous antinode positions and all antinodes to the previous node positions, thus relocating the trapping sites.",
+    "topic": "Waves and Acoustics",
+    "subtopic": "Acoustic Levitation and Wave Manipulation"
+  },
+  {
+    "question_text": "The image shows the envelope of the standing wave as '2A sin kx'. If this represents the vibration pattern of a resonant structure (e.g., a bridge during an earthquake or a machine component), what practical implication does the 'sin kx' term have for engineering design and structural integrity?",
+    "image_path": "page_140_image_0.jpg",
+    "option_text": [
+      "It implies that the structure will uniformly vibrate along its entire length, simplifying design.",
+      "It means that certain fixed points along the structure will always experience zero displacement, making them ideal for support.",
+      "It suggests that specific locations (antinodes) along the structure will experience maximum displacement, and thus maximum stress and strain, which are critical for structural reinforcement.",
+      "It indicates that the vibration amplitude is independent of the position 'x', allowing for uniform material usage."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "The 'sin kx' term describes the spatial variation of the amplitude along the structure. This means that certain points (antinodes, where sin kx is maximum) will experience the largest displacements. In engineering, these regions of maximum displacement are also subjected to the highest stresses and strains. Therefore, understanding this spatial variation is crucial for identifying critical points that need to be reinforced or designed with higher resilience to prevent structural failure during resonance.",
+    "topic": "Mechanical Waves and Engineering",
+    "subtopic": "Structural Resonance and Vibration Analysis"
+  },
+  {
+    "question_text": "From an engineering perspective, the wave shown on the string, where particles oscillate perpendicular to the direction of energy propagation (indicated by 'v'), is classified as what type of wave?",
+    "image_path": "page_125_image_1.jpg",
+    "option_text": [
+      "Transverse wave",
+      "Longitudinal wave",
+      "Electromagnetic wave",
+      "Surface wave"
+    ],
+    "correct_answer_index": 0,
+    "difficulty_level": "Easy",
+    "explanation": "A transverse wave is characterized by the displacement of the medium's particles being perpendicular to the direction of wave propagation. In the image, the hand moves the string up and down (y-direction), while the wave travels along the string (x-direction), clearly showing a transverse motion. This fundamental classification is crucial for selecting appropriate modeling techniques in engineering applications like vibration analysis of cables or structural components.",
+    "topic": "Wave Mechanics",
+    "subtopic": "Wave Classification"
+  },
+  {
+    "question_text": "An engineering student analyzing this wave propagation on a string with tension 'T' and linear mass density 'μ' needs to determine the wave speed 'v'. Which of the following equations is correctly used for this calculation in mechanical wave systems?",
+    "image_path": "page_125_image_1.jpg",
+    "option_text": [
+      "v = √(T/μ)",
+      "v = T/μ",
+      "v = √(μ/T)",
+      "v = (Tμ)/2"
+    ],
+    "correct_answer_index": 0,
+    "difficulty_level": "Medium",
+    "explanation": "The speed of a transverse wave on a string is determined by the string's properties: its tension (T) and its linear mass density (μ). The formula v = √(T/μ) is derived from Newton's second law and describes how quickly disturbances propagate through the medium. This formula is vital for engineers designing or analyzing systems like musical instruments, power transmission lines (for mechanical sag/vibration), or suspension bridges, where understanding wave speed is critical for predicting dynamic behavior and resonant frequencies.",
+    "topic": "Wave Mechanics",
+    "subtopic": "Wave Speed and Medium Properties"
+  },
+  {
+    "question_text": "Considering the fixed boundary on the right side of the string, which represents a rigid support in an engineering system (e.g., a bolted connection for a vibrating beam or a termination point for a flexible conduit). When the wave pulse reaches this boundary, what fundamental wave phenomenon occurs, and what is its most significant practical implication for the system's dynamic response?",
+    "image_path": "page_125_image_1.jpg",
+    "option_text": [
+      "The wave is entirely absorbed, dissipating all its energy without reflection, leading to a perfectly damped system.",
+      "The wave is reflected with a 0-degree phase shift, causing the reflected pulse to constructively interfere with the incident wave, increasing amplitude at the boundary.",
+      "The wave is reflected with a 180-degree phase shift (or π radians), resulting in an inverted wave pulse. This phenomenon is crucial for the formation of standing waves and dictates the boundary conditions for resonant modes in structures, cables, and waveguides.",
+      "The wave passes through the boundary into the wall, where it continues to propagate as an acoustic wave, having no further effect on the string."
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "A fixed boundary (like a wall or a rigid support) for a transverse wave acts as a point of forced zero displacement. To satisfy this condition, the reflected wave must exactly cancel the incident wave at the boundary at all times. This can only happen if the reflected wave undergoes a 180-degree (or π radians) phase shift, effectively inverting the pulse. From an engineering standpoint, this phase inversion at fixed ends is fundamental to understanding the formation of standing waves and determining the natural frequencies (resonant modes) of vibrating structures, such as bridges, beams, or transmission lines. Ignoring this phase shift would lead to incorrect predictions of system response and potential resonance-induced failure.",
+    "topic": "Wave Phenomena",
+    "subtopic": "Wave Reflection and Resonance"
+  },
+  {
+    "question_text": "In the provided graphs (a) and (b), what fundamental physical principle is primarily illustrated by the constant horizontal line representing K(t) + U(t) and K(x) + U(x)?",
+    "image_path": "page_122_image_0.jpg",
+    "option_text": [
+      "Conservation of linear momentum",
+      "Conservation of mechanical energy",
+      "The work-energy theorem",
+      "Newton's third law of motion"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The graphs clearly show that the sum of kinetic energy (K) and potential energy (U) remains constant over time (a) and position (b), indicated by the flat line at 1/2 k_H A^2. This demonstrates the principle of conservation of mechanical energy in a system where only conservative forces (like the spring force, implied by k_H) are doing work, assuming no energy loss due to non-conservative forces like friction.",
+    "topic": "Physics",
+    "subtopic": "Energy Conservation"
+  },
+  {
+    "question_text": "According to graph (b), which depicts energy as a function of position (x), where is the potential energy (U(x)) of the system at its maximum value?",
+    "image_path": "page_122_image_0.jpg",
+    "option_text": [
+      "At the equilibrium position (x = 0)",
+      "At the extreme positions (x = -A and x = A)",
+      "Only at the positive extreme position (x = A)",
+      "At any point where kinetic energy is zero"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "Graph (b) shows the blue curve, U(x), reaching its maximum value (1/2 k_H A^2) at the extreme positions x = -A and x = A. At these points, the system momentarily comes to rest before reversing direction, so kinetic energy is zero, and all mechanical energy is stored as potential energy.",
+    "topic": "Physics",
+    "subtopic": "Simple Harmonic Motion (SHM)"
+  },
+  {
+    "question_text": "The variable 'k_H' appears in the maximum energy expression `1/2 k_H A^2`. Given the parabolic shape of the potential energy curve U(x) in graph (b), what specific physical system is most accurately represented here, and what does `k_H` typically represent in this context?",
+    "image_path": "page_122_image_0.jpg",
+    "option_text": [
+      "A simple pendulum, where k_H is the gravitational acceleration.",
+      "A mass-spring system, where k_H is the spring constant.",
+      "An object falling under gravity, where k_H is the object's mass.",
+      "A charged particle in an electric field, where k_H is the charge of the particle."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Medium",
+    "explanation": "The potential energy U(x) for a simple harmonic oscillator like a mass-spring system is given by U(x) = 1/2 k x^2, which is a parabolic function centered at x=0, precisely as shown by the blue curve in graph (b). The constant `k_H` is therefore identified as the spring constant (Hooke's Law constant), and the total energy `1/2 k_H A^2` represents the maximum potential energy stored in the spring when stretched or compressed to the amplitude A.",
+    "topic": "Physics",
+    "subtopic": "Simple Harmonic Motion (SHM) Energy"
+  },
+  {
+    "question_text": "In graph (a), the potential energy U(t) and kinetic energy K(t) curves complete two full oscillations within one period (T) of the underlying simple harmonic motion (displacement x(t)). If the fundamental angular frequency of the displacement is ω, what is the angular frequency of the energy oscillations (K(t) or U(t))?",
+    "image_path": "page_122_image_0.jpg",
+    "option_text": [
+      "ω",
+      "ω/2",
+      "2ω",
+      "4ω"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Hard",
+    "explanation": "The displacement in simple harmonic motion can be described as x(t) = A cos(ωt). The potential energy is U(t) = 1/2 k x(t)^2 = 1/2 k A^2 cos^2(ωt). Using the trigonometric identity cos^2(θ) = (1 + cos(2θ))/2, we get U(t) = (1/4) k A^2 (1 + cos(2ωt)). Similarly, kinetic energy K(t) = 1/2 m v(t)^2 = 1/2 m (-Aω sin(ωt))^2 = 1/2 m A^2 ω^2 sin^2(ωt). Using sin^2(θ) = (1 - cos(2θ))/2 and mω^2 = k, we get K(t) = (1/4) k A^2 (1 - cos(2ωt)). Both K(t) and U(t) therefore oscillate at twice the angular frequency (2ω) of the displacement. Graph (a) visually confirms this by showing two complete cycles of K(t) and U(t) over one full period T of the underlying displacement.",
+    "topic": "Physics",
+    "subtopic": "Simple Harmonic Motion Dynamics"
+  },
+  {
+    "question_text": "What is the total temperature difference, in degrees Celsius, between the water at the bottom and the top as shown in the image?",
+    "image_path": "page_39_image_0.jpg",
+    "option_text": [
+      "20 °C",
+      "27 °C",
+      "34 °C",
+      "7 °C"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Easy",
+    "explanation": "The temperature at the top is 27 °C and at the bottom is -7 °C. The temperature difference is 27 °C - (-7 °C) = 27 + 7 = 34 °C.",
+    "topic": "Thermodynamics",
+    "subtopic": "Temperature Measurement"
+  },
+  {
+    "question_text": "Based on the image, what is the change in absolute pressure experienced by the bubble as it rises from the bottom to the surface?",
+    "image_path": "page_39_image_0.jpg",
+    "option_text": [
+      "1 atm",
+      "2 atm",
+      "3 atm",
+      "4 atm"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "The pressure at the bottom is 3 atm and at the top is 1 atm. The change in pressure is 3 atm - 1 atm = 2 atm.",
+    "topic": "Fluid Mechanics",
+    "subtopic": "Pressure"
+  },
+  {
+    "question_text": "As the bubble rises from the bottom to the top in the depicted scenario, how does its volume change, and what are the primary reasons for this change?",
+    "image_path": "page_39_image_0.jpg",
+    "option_text": [
+      "The volume decreases due to the increasing temperature and decreasing pressure.",
+      "The volume increases due to the decreasing pressure and increasing temperature.",
+      "The volume remains constant because the amount of gas in the bubble is unchanged.",
+      "The volume decreases due to the increasing pressure and decreasing temperature."
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Easy",
+    "explanation": "As the bubble rises, the pressure decreases from 3 atm to 1 atm, which tends to increase its volume (Boyle's Law). Simultaneously, the temperature increases from -7 °C to 27 °C, which also tends to increase its volume (Charles's Law). Both factors contribute to an increase in the bubble's volume.",
+    "topic": "Gas Laws",
+    "subtopic": "Combined Gas Law Qualitative"
+  },
+  {
+    "question_text": "If a bubble at the bottom of the liquid (3 atm, -7 °C) has an initial volume V, what would be its approximate volume when it reaches the top (1 atm, 27 °C)? Assume the amount of gas in the bubble remains constant.",
+    "image_path": "page_39_image_0.jpg",
+    "option_text": [
+      "Approximately 0.3 V",
+      "Approximately 1.1 V",
+      "Approximately 3.4 V",
+      "Approximately 9.0 V"
+    ],
+    "correct_answer_index": 2,
+    "difficulty_level": "Medium",
+    "explanation": "We use the combined gas law: (P1V1)/T1 = (P2V2)/T2. First, convert temperatures to Kelvin: T1 = -7 °C + 273.15 = 266.15 K, T2 = 27 °C + 273.15 = 300.15 K. \nGiven: P1 = 3 atm, V1 = V, T1 = 266.15 K. P2 = 1 atm, T2 = 300.15 K.\nSolving for V2: V2 = V1 * (P1/P2) * (T2/T1) = V * (3 atm / 1 atm) * (300.15 K / 266.15 K) = V * 3 * 1.12788... ≈ 3.38 V. So, the volume at the top is approximately 3.4 times the initial volume.",
+    "topic": "Gas Laws",
+    "subtopic": "Combined Gas Law Quantitative"
+  },
+  {
+    "question_text": "If the diameter of the bubble at the bottom (3 atm, -7 °C) is 'd', approximately what would be its diameter when it reaches the top (1 atm, 27 °C)? Assume the bubble is spherical and the amount of gas is constant.",
+    "image_path": "page_39_image_0.jpg",
+    "option_text": [
+      "Approximately 0.7 d",
+      "Approximately 1.5 d",
+      "Approximately 2.2 d",
+      "Approximately 3.4 d"
+    ],
+    "correct_answer_index": 1,
+    "difficulty_level": "Hard",
+    "explanation": "From the combined gas law calculation (as in the medium difficulty question), we found that the volume of the bubble at the top (V2) is approximately 3.38 times its volume at the bottom (V1). That is, V2 ≈ 3.38 * V1. For a spherical bubble, volume V = (4/3)πr³, where r is the radius. Since diameter D = 2r, V is proportional to D³. Therefore, the ratio of the diameters is (D2/D1) = (V2/V1)^(1/3). \nSubstituting the volume ratio: D2/D1 ≈ (3.38)^(1/3). \nThe cube root of 3.38 is approximately 1.50. So, D2 ≈ 1.5 * D1. If the initial diameter is 'd', the final diameter is approximately 1.5 d.",
+    "topic": "Gas Laws, Geometry",
+    "subtopic": "Combined Gas Law, Volume and Diameter Relationship"
+  }
+]
