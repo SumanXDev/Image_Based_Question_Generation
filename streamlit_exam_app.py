@@ -357,7 +357,7 @@ def show_welcome_page():
                     st.session_state.questions = questions
                     st.session_state.exam_started = True
                     st.session_state.timer_start = time.time()
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.error("Failed to generate questions. Please try again.")
 
@@ -390,7 +390,7 @@ def show_question_navigator():
         col_index = i % 5
         if cols[col_index].button(button_label, key=button_key, use_container_width=True):
             jump_to_question(i)
-            st.experimental_rerun()
+            st.rerun()
 
 def show_exam_page():
     """Display the main exam page with questions"""
@@ -437,7 +437,7 @@ def show_exam_page():
     with col1:
         if st.button("← Previous", disabled=st.session_state.current_question_index == 0):
             prev_question()
-            st.experimental_rerun()
+            st.rerun()
     
     with col2:
         if st.button("Submit Exam", type="primary"):
@@ -447,15 +447,15 @@ def show_exam_page():
                     st.warning(f"You have {unanswered} unanswered questions. Please check the navigator.")
                 else:
                     submit_exam()
-                    st.experimental_rerun()
+                    st.rerun()
             else:
                 submit_exam()
-                st.experimental_rerun()
+                st.rerun()
     
     with col3:
         if st.button("Next →", disabled=st.session_state.current_question_index == len(st.session_state.questions) - 1):
             next_question()
-            st.experimental_rerun()
+            st.rerun()
     
     # Show difficulty in sidebar
     display_difficulty_badge(question.get('difficulty_level', 'Unknown'))
@@ -592,7 +592,7 @@ def show_results_page():
     # Restart button
     if st.button("Start New Exam", type="primary"):
         restart_exam()
-        st.experimental_rerun()
+        st.rerun()
 
 # Main app
 def main():
